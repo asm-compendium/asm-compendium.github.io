@@ -8,7 +8,7 @@ This is a demo of the theme's documentation layout.
 ## Hello, World!
 
 
- ```go {filename="main_2.go"}
+ ```ada {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -41,7 +41,7 @@ bx lr
 ```
 
 
- ```armasm {filename="main_2.go"}
+ ```all {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -105,7 +105,7 @@ bx lr
 
 ```
 
-```c {filename="main_2.go"}
+```apl {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -138,7 +138,7 @@ bx lr
 ```
 
 
-```python {filename="main_2.go"}
+```bash {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -171,7 +171,7 @@ bx lr
 ```
 
 
-```zig {filename="main_2.go"}
+```verilog {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -204,7 +204,7 @@ bx lr
 ```
 
 
-```z80 {filename="main_2.go"}
+```bf {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
