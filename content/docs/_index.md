@@ -9,7 +9,7 @@ This is a demo of the theme's documentation layout.
 
 <div class="columns">
   <div class="column">
-    ```go {filename="main.go"}
+    go {filename="main.go"}
     package main
 
     import "fmt"
@@ -17,11 +17,11 @@ This is a demo of the theme's documentation layout.
     func main() {
         fmt.Println("Hello, World!")
     }
-    ```
+    
   </div>
 
   <div class="column">
-    ```go {filename="main_2.go"}
+    go {filename="main_2.go"}
     package main
 
     import "fmt"
@@ -29,7 +29,6 @@ This is a demo of the theme's documentation layout.
     func main(a) {
         fmt.Println(a)
     }
-    ```
   </div>
 </div>
 
