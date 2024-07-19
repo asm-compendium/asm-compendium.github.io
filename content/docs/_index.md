@@ -10,9 +10,8 @@ This is a demo of the theme's documentation layout.
 <div class="columns">
   <div class="column">
     Example 1
-{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+
 // ... code
-{{< / highlight >}}
 
   </div>
 
