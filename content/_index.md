@@ -1,5 +1,5 @@
 ---
-title: ARMv7-M Optimization Compendium
+title: Cortex-M4 Optimization Compendium
 toc: false
 ---
 
