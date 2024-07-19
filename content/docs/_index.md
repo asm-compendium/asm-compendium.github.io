@@ -21,7 +21,7 @@ This is a demo of the theme's documentation layout.
 ```
 
 <table style="width: 100%; border-collapse: collapse; border: none;">
-<tr><td style="width: 60%;">
+<tr><td style="width: 55%;">
 
 ```verilog {filename="sample a"}
 
@@ -30,6 +30,7 @@ This is a demo of the theme's documentation layout.
     ldr.w r3, [r0, #4]! //LSU +2
     ldr.w r4, [r0, #4]! //LSU +2
 ```
+
 </td><td>
 
 ```verilog {filename="sample b"}
