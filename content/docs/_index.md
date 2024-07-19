@@ -75,6 +75,7 @@ ldr.w r4, [r0, #4]! //LSU +2
 <table style="width: 50%; border-collapse: collapse;">
     <tr>
         <td style="padding: 15px; text-align: left;">
+            
 ```verilog {filename="sample b"}
     ldr.w r1, [r0, #4]  //LSU +1
     ldr.w r1, [r0, #4]! //LSU +1
@@ -83,6 +84,7 @@ ldr.w r4, [r0, #4]! //LSU +2
     ldr.w r4, [r0, #4]! //LSU +2
 ```</td>
         <td style="padding: 15px; text-align: left;">
+            
 ```verilog {filename="sample b"}
     ldr.w r1, [r0, #4]  //LSU +1
     ldr.w r1, [r0, #4]! //LSU +1
