@@ -4,8 +4,26 @@ type: docs
 prev: docs/
 # next: docs/folder/
 ---
+<style>
+  .side-by-side {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .box {
+    flex: 1;
+    border: none;
+    box-sizing: border-box;
+  }
+  @media (max-width: 400px) {
+            .side-by-side {
+                flex-direction: column;
+            }
+        }
+</style>
 
-Moving a `ror` operation from it's own instruction into the add instruction by using the inline barrel shifter. 
+The inline barrel shifter feature, also known as the constant shift feature, allows to optionally shift the Rn operand for most instructions before it is processed by the main instruction.
 
 <div class="side-by-side">
   <div class="box">
@@ -26,3 +44,5 @@ Moving a `ror` operation from it's own instruction into the add instruction by u
 ```
   </div>
 </div>
+
+As this does not add any cycles to aritmatic instructions it can be used to eliminate the cycles used by most shift instructions.
