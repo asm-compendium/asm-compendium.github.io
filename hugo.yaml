@@ -40,8 +40,8 @@ params:
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
-    base: "https://github.com/asm-compendium"
+    base: "https://github.com/asm-compendium/asm-compendium.github.io"
