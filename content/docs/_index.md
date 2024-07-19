@@ -9,9 +9,9 @@ This is a demo of the theme's documentation layout.
 
 <div class="columns">
   <div class="column">
-    go {filename="main.go"}
+    Example 1
+    
     package main
-
     import "fmt"
 
     func main() {
@@ -21,7 +21,8 @@ This is a demo of the theme's documentation layout.
   </div>
 
   <div class="column">
-    go {filename="main_2.go"}
+    example 2
+    
     package main
 
     import "fmt"
