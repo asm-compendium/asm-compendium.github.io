@@ -7,4 +7,4 @@ This website was set up as the digital counterpart to my master thesis, focusing
 
 My aim is to keep updating this digital compendium whenever I come across new interesting techniques to get the most out of these microcontrollers.
 
-- Senna van Hoek
+\- Senna van Hoek
