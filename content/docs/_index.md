@@ -6,7 +6,7 @@ next: first-page
 This is a demo of the theme's documentation layout.
 
 ## Not pipelinable load chain
-
+Example assembly snipets:
 
 <style>
   .side-by-side {
@@ -15,9 +15,10 @@ This is a demo of the theme's documentation layout.
   }
   .box {
     flex: 1;
-    padding: none;
     border: none;
     box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 </style>
 
