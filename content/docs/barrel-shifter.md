@@ -45,4 +45,4 @@ The inline barrel shifter feature, also known as the constant shift feature, all
   </div>
 </div>
 
-As this does not add any cycles to aritmatic instructions it can be used to eliminate the cycles used by most shift instructions.
+As this does not add any cycles to aritmatic instructions, it can be used to eliminate the cycles used by most shift instructions.
