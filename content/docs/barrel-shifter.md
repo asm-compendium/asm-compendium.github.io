@@ -16,7 +16,6 @@ Moving a `ror` operation from it's own instruction into the add instruction by u
    ror r1, #2
    add r0, r1, r1 
 ```
-cycles: 4
   </div>
   <div class="box">
 
@@ -25,6 +24,5 @@ cycles: 4
    mov r1, #12
    add r0, r1, r1, ror #2
 ```
-cycles: 3
   </div>
 </div>
