@@ -19,3 +19,7 @@ This is a demo of the theme's documentation layout.
     ldr.w r3, [r0, #4]! //LSU +1
     ldr.w r4, [r0, #4]! //LSU +2
 ```
+| Status | Response  |
+| ------ | --------- |
+| 200    |Some code here:<br><pre lang="json">{&#13;  "id": 10,&#13;  "username": "alanpartridge"&#13;}</pre>|
+| 400    |Some text here|
