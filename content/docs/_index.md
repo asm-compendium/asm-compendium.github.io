@@ -20,7 +20,8 @@ This is a demo of the theme's documentation layout.
     ldr.w r4, [r0, #4]! //LSU +2
 ```
 
-<table style="width: 100%; border-collapse: collapse; border: none;"><tr><td style="width: 50%;">
+<table style="width: 100%; border-collapse: collapse; border: none;">
+<tr><td style="width: 50%;">
 
 ```verilog {filename="sample a"}
 
