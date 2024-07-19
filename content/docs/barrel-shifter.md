@@ -41,6 +41,7 @@ The inline barrel shifter feature, also known as the constant shift feature, all
    mov r0, #10
    mov r1, #12
    add r0, r1, r1, ror #2
+
 ```
   </div>
 </div>
