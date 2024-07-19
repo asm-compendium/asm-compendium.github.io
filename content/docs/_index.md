@@ -20,6 +20,11 @@ Example assembly snipets:
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  @media (max-width: 200px) {
+            .side-by-side {
+                flex-direction: column; /* Stack items vertically */
+            }
+        }
 </style>
 
 <div class="side-by-side">
