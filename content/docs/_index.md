@@ -52,3 +52,27 @@ This is a demo of the theme's documentation layout.
     </tr>
 </table>
 
+
+<style>
+  .side-by-side {
+    display: flex;
+    gap: 10px; /* Optional: adds space between the divs */
+  }
+  .box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  .box1 {
+    background-color: #f8f9fa;
+  }
+  .box2 {
+    background-color: #e9ecef;
+  }
+</style>
+
+<div class="side-by-side">
+  <div class="box box1">Div 1</div>
+  <div class="box box2">Div 2</div>
+</div>
