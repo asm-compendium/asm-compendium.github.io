@@ -10,14 +10,10 @@ This is a demo of the theme's documentation layout.
 <div class="columns">
   <div class="column">
     Example 1
-    
-    package main
-    import "fmt"
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+// ... code
+{{< / highlight >}}
 
-    func main() {
-        fmt.Println("Hello, World!")
-    }
-    
   </div>
 
   <div class="column">
