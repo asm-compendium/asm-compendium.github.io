@@ -23,3 +23,11 @@ This is a demo of the theme's documentation layout.
 | ------ | --------- |
 | 200    |<pre lang="verilog">ldr.w r1, [r0, #0x4]! //LSU +2&#13;ldr.w r1, [r0, #0x4]! //LSU +2&#13;ldr.w r1, [r0, #0x4]! //LSU +2</pre>|
 | 400    |Some text here|
+
+<table><tr><td>
+
+My markdown code
+* one
+* two 
+* three
+</td></tr></table>
