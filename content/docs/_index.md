@@ -35,7 +35,7 @@ This is a demo of the theme's documentation layout.
 ```
 </td></tr></table>
 
-table style="width: 50%; border-collapse: collapse;">
+<table style="width: 50%; border-collapse: collapse;">
     <tr>
         <td style="padding: 15px; text-align: left;">
 
