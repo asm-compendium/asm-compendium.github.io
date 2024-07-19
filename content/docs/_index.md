@@ -38,10 +38,24 @@ This is a demo of the theme's documentation layout.
 table style="width: 50%; border-collapse: collapse;">
     <tr>
         <td style="padding: 15px; text-align: left;">
-        Cell 1
+
+```verilog {filename="sample a"}
+ldr.w r1, [r0, #4]  //LSU +1
+ldr.w r1, [r0, #4]! //LSU +1
+ldr.w r2, [r0, #4]! //LSU +1
+ldr.w r3, [r0, #4]! //LSU +1
+ldr.w r4, [r0, #4]! //LSU +2
+```
         </td>
         <td style="padding: 15px; text-align: left;">
-        Cell 2
+
+```verilog {filename="sample b"}
+ldr.w r1, [r0, #4]  //LSU +1
+ldr.w r1, [r0, #4]! //LSU +1
+ldr.w r2, [r0, #4]! //LSU +1
+ldr.w r3, [r0, #4]! //LSU +1
+ldr.w r4, [r0, #4]! //LSU +2
+```
         </td>
     </tr>
 </table>
