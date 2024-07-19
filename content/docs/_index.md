@@ -12,13 +12,13 @@ Example assembly snipets:
   .side-by-side {
     display: flex;
     gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .box {
     flex: 1;
     border: none;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   @media (max-width: 400px) {
             .side-by-side {
