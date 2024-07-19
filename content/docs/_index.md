@@ -33,7 +33,17 @@ This is a demo of the theme's documentation layout.
     ldr.w r3, [r0, #4]! //LSU +1
     ldr.w r4, [r0, #4]! //LSU +2
 ```
-</td></tr></table>
+</td></tr><tr><td>
+
+```verilog {filename="sample b"}
+    ldr.w r1, [r0, #4]  //LSU +1
+    ldr.w r1, [r0, #4]! //LSU +1
+    ldr.w r2, [r0, #4]! //LSU +1
+    ldr.w r3, [r0, #4]! //LSU +1
+    ldr.w r4, [r0, #4]! //LSU +2
+```
+</td></tr>
+</table>
 
 <table style="width: 50%; border-collapse: collapse;">
     <tr>
