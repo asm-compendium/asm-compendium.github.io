@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: ARMv7-M assembly optimization compendium 
+title: Assembly Compendium 
 
 # import hextra as module
 module:
@@ -25,7 +25,7 @@ menu:
       pageRef: /about
       weight: 2
     - name: Contact ↗
-      url: "https://github.com/imfing"
+      url: "https://github.com/sennavanhoek"
       weight: 3
     - name: Search
       weight: 4

@@ -1,9 +1,9 @@
 ---
-title: My Site
+title: ARMv7-M assembly optimization compendium
 toc: false
 ---
 
-This is the landing page.
+Under construction.
 
 ## Explore
 
@@ -14,4 +14,4 @@ This is the landing page.
 
 ## Documentation
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+<!-- For more information, visit [Hextra](https://imfing.github.io/hextra). -->

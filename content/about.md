@@ -3,4 +3,4 @@ title: About
 type: about
 ---
 
-This is the about page.
+The digital counterpart of my master's thesis.
