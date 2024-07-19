@@ -44,4 +44,4 @@ params:
 
   editURL:
     enable: true
-    base: "compendium.i-0.nl"
+    base: "https://github.com/asm-compendium"
