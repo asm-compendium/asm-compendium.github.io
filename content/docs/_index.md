@@ -19,4 +19,3 @@ This is a demo of the theme's documentation layout.
     ldr.w r3, [r0, #4]! //LSU +1
     ldr.w r4, [r0, #4]! //LSU +2
 ```
-```
