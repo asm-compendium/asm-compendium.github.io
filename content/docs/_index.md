@@ -21,7 +21,7 @@ This is a demo of the theme's documentation layout.
 ```
 
 <table style="width: 100%; border-collapse: collapse; border: none;">
-<tr><td style="width: 50%;">
+<tr><td style="width: 60%;">
 
 ```verilog {filename="sample a"}
 
