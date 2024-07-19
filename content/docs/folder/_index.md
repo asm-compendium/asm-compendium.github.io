@@ -1,10 +1,10 @@
 ---
-title: Folder
+title: FPU
 type: docs
 prev: docs/first-page
-next: docs/folder/leaf
+next: docs/folder/registers
 sidebar:
   open: true
 ---
 
-Pages can be organized into folders.
+FPU based optimizations.
