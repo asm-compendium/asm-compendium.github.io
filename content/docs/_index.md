@@ -38,7 +38,7 @@ bx lr
 
 ```
 
- ```cobol {filename="main_2.go"}
+ ``` {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -71,7 +71,7 @@ bx lr
 ```
 
 
- ```emacs {filename="main_2.go"}
+ ```csharp {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -103,7 +103,7 @@ bx lr
 
 ```
 
-```fortran {filename="main_2.go"}
+```as {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -168,7 +168,7 @@ bx lr
 ```
 
 
-```haskell {filename="main_2.go"}
+```js {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
@@ -204,7 +204,7 @@ bx lr
 
 
 
-```hexdump {filename="main_2.go"}
+```java {filename="main_2.go"}
 .syntax unified
 .cpu cortex-m4
 
