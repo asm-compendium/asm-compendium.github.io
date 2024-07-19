@@ -1,13 +1,7 @@
 ---
 title: Documentation
-next: first-page
+next: barrel-shifter
 ---
-
-This is a demo of the documentation layout.
-
-## Not pipelinable load chain
-Example assembly snipets:
-
 <style>
   .side-by-side {
     display: flex;
@@ -26,6 +20,13 @@ Example assembly snipets:
             }
         }
 </style>
+
+
+This is a demo of the documentation layout.
+
+## Not pipelinable load chain
+Example assembly snipets:
+
 
 <div class="side-by-side">
   <div class="box">

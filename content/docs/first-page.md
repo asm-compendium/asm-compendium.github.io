@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Demo Page
 type: docs
 prev: docs/
