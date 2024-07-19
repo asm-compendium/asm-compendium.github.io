@@ -45,23 +45,11 @@ This is a demo of the theme's documentation layout.
 </table>
 
 <table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="border: none; padding: 8px; text-align: left;">Header 1</th>
-      <th style="border: none; padding: 8px; text-align: left;">Header 2</th>
-      <th style="border: none; padding: 8px; text-align: left;">Header 3</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td style="border: none; padding: 8px;">Data 1</td>
       <td style="border: none; padding: 8px;">Data 2</td>
       <td style="border: none; padding: 8px;">Data 3</td>
-    </tr>
-    <tr>
-      <td style="border: none; padding: 8px;">Data 4</td>
-      <td style="border: none; padding: 8px;">Data 5</td>
-      <td style="border: none; padding: 8px;">Data 6</td>
     </tr>
   </tbody>
 </table>
