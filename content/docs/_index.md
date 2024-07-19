@@ -45,12 +45,10 @@ This is a demo of the theme's documentation layout.
 </table>
 
 <table style="width: 100%; border-collapse: collapse;">
-  <tbody>
     <tr>
       <td style="border: none; padding: 8px;">Data 1</td>
       <td style="border: none; padding: 8px;">Data 2</td>
       <td style="border: none; padding: 8px;">Data 3</td>
     </tr>
-  </tbody>
 </table>
 
