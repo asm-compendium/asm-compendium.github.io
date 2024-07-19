@@ -7,48 +7,69 @@ This is a demo of the theme's documentation layout.
 
 ## Hello, World!
 
-<div class="columns">
-  <div class="column">
-    Example 1
-
-// ... code
-
-  </div>
-
-  <div class="column">
-    example 2
-    
-    package main
-
-    import "fmt"
-
-    func main(a) {
-        fmt.Println(a)
-    }
-  </div>
-</div>
-
-<style>
-.columns {
-  display: flex;
-  justify-content: space-between;
-}
-.column {
-  flex: 1;
-  margin-right: 10px;
-}
-.column:last-child {
-  margin-right: 0;
-}
-</style>
 
  ```go {filename="main_2.go"}
-    package main
+.syntax unified
+.cpu cortex-m4
 
-    import "fmt"
+.align 4
+.global sample_a
+.type sample_a, %function
+sample_a:
+    //9
+    //Setup_assembly
+    mov.w r0, sp
+    sub.w r1, sp, #4
+    str.w sp, [r1]
+    mov.w r2, #-8
+    mov.w r5, #-4
+    mov.w r4, sp
+    mov.w r8, r8
+    mov.w r8, r8
+    //Target_assembly
+    ldr.w r3, [r1] //+1
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1]
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1]
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1] //+1
+    //End_target_assembly
+    mov.w r8, r8
+bx lr
 
-    func main(a) {
-        fmt.Println(a)
-    }
+```
+
+
+ ```ArmAsm {filename="main_2.go"}
+.syntax unified
+.cpu cortex-m4
+
+.align 4
+.global sample_a
+.type sample_a, %function
+sample_a:
+    //9
+    //Setup_assembly
+    mov.w r0, sp
+    sub.w r1, sp, #4
+    str.w sp, [r1]
+    mov.w r2, #-8
+    mov.w r5, #-4
+    mov.w r4, sp
+    mov.w r8, r8
+    mov.w r8, r8
+    //Target_assembly
+    ldr.w r3, [r1] //+1
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1]
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1]
+    str.w r3, [r0, r2] //+1
+    str.w r3, [r1] //+1
+    //End_target_assembly
+    mov.w r8, r8
+bx lr
+
 ```
 
