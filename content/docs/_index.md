@@ -69,3 +69,12 @@ ldr.w r4, [r0, #4]! //LSU +2
         </td>
     </tr>
 </table>
+
+# Simple HTML Table with Two Cells Side by Side
+
+<table style="width: 50%; border-collapse: collapse;">
+    <tr>
+        <td style="padding: 15px; text-align: left;">Cell 1</td>
+        <td style="padding: 15px; text-align: left;">Cell 2</td>
+    </tr>
+</table>
