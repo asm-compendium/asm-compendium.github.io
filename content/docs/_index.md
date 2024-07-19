@@ -45,3 +45,14 @@ This is a demo of the theme's documentation layout.
   margin-right: 0;
 }
 </style>
+
+ ```go {filename="main_2.go"}
+    package main
+
+    import "fmt"
+
+    func main(a) {
+        fmt.Println(a)
+    }
+```
+
