@@ -61,18 +61,12 @@ This is a demo of the theme's documentation layout.
   .box {
     flex: 1;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: none;
     box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-  }
-  .box1 {
-    background-color: #f8f9fa;
-  }
-  .box2 {
-    background-color: #e9ecef;
   }
 </style>
 
 <div class="side-by-side">
-  <div class="box box1">Div 1</div>
-  <div class="box box2">Div 2</div>
+  <div class="box">Div 1</div>
+  <div class="box">Div 2</div>
 </div>
