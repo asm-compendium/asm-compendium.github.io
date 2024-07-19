@@ -1,5 +1,5 @@
 ---
-title: ARMv7-M assembly optimization compendium
+title: ARMv7-M Optimization Compendium
 toc: false
 ---
 
