@@ -20,6 +20,17 @@ input[type=number] {
 </style>
 
 
+\[ 
+f(Rn, Rm) =
+\begin{cases} 
+2, & \text{if } Rn = 0 \lor Rm = 0 \\ 
+3, & \text{if } \text{bits}(Rn) < \text{bits}(Rm) \\ 
+5 + \left\lfloor \frac{\text{bits}(Rn) - \text{bits}(Rm)}{4} \right\rfloor, & \text{otherwise}
+\end{cases} 
+\]
+
+
+
 
 ### Division Cycle Count Calculator
 
