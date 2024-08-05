@@ -4,7 +4,6 @@ type: docs
 prev: barrel-shifter/
 # next: docs/folder/
 ---
-# Division timing
 
 <style>
 /* Chrome, Safari, Edge, Opera */
@@ -22,7 +21,7 @@ input[type=number] {
 
 
 
-### DCCC: Division Cycle Count Calculator
+### Division Cycle Count Calculator
 
 
 
