@@ -19,15 +19,20 @@ input[type=number] {
 }
 </style>
 
+<!-- <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script> -->
 
-\[ 
+
+$$ 
 f(Rn, Rm) =
-\begin{cases} 
-2, & \text{if } Rn = 0 \lor Rm = 0 \\ 
-3, & \text{if } \text{bits}(Rn) < \text{bits}(Rm) \\ 
+\begin{cases}
+2, & \text{if } Rn = 0 \lor Rm = 0 \\
+3, & \text{if } \text{bits}(Rn) < \text{bits}(Rm) \\
 5 + \left\lfloor \frac{\text{bits}(Rn) - \text{bits}(Rm)}{4} \right\rfloor, & \text{otherwise}
-\end{cases} 
-\]
+\end{cases}
+$$
+
 
 
 
