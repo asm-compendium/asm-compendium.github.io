@@ -19,7 +19,7 @@ input[type=number] {
 }
 </style>
 
-<script id="MathJax-script" async
+<!-- <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
@@ -31,8 +31,93 @@ f(Rn, Rm) =
 3, & \text{if } \text{bits}(Rn) < \text{bits}(Rm) \\\\
 5 + \left\lfloor \frac{\text{bits}(Rn) - \text{bits}(Rm)}{4} \right\rfloor, & \text{otherwise} \\\\
 \end{cases}
-$$
+$$ -->
 
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>f</mi>
+  <mo stretchy="false">(</mo>
+  <mi>R</mi>
+  <mi>n</mi>
+  <mo>,</mo>
+  <mi>R</mi>
+  <mi>m</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">{</mo>
+    <mtable columnalign="left left" columnspacing="1em" rowspacing=".2em">
+      <mtr>
+        <mtd>
+          <mn>2</mn>
+          <mo>,</mo>
+        </mtd>
+        <mtd>
+          <mtext>if&#xA0;</mtext>
+          <mi>R</mi>
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+          <mo>&#x2228;</mo>
+          <mi>R</mi>
+          <mi>m</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>3</mn>
+          <mo>,</mo>
+        </mtd>
+        <mtd>
+          <mtext>if&#xA0;</mtext>
+          <mtext>bits</mtext>
+          <mo stretchy="false">(</mo>
+          <mi>R</mi>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo>&lt;</mo>
+          <mtext>bits</mtext>
+          <mo stretchy="false">(</mo>
+          <mi>R</mi>
+          <mi>m</mi>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>5</mn>
+          <mo>+</mo>
+          <mrow data-mjx-texclass="INNER">
+            <mo data-mjx-texclass="OPEN">&#x230A;</mo>
+            <mfrac>
+              <mrow>
+                <mtext>bits</mtext>
+                <mo stretchy="false">(</mo>
+                <mi>R</mi>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;</mo>
+                <mtext>bits</mtext>
+                <mo stretchy="false">(</mo>
+                <mi>R</mi>
+                <mi>m</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+            <mo data-mjx-texclass="CLOSE">&#x230B;</mo>
+          </mrow>
+          <mo>,</mo>
+        </mtd>
+        <mtd>
+          <mtext>otherwise</mtext>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
+  </mrow>
+</math>
 
 
 
