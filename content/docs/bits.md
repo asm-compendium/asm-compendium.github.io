@@ -8,26 +8,47 @@ prev: barrel-shifter/
 
 Enter an unsigned integer to find out how many bits are used to represent it.
 
-<label for="numberInput">Enter an unsigned integer:</label>
-<input type="number" id="numberInput" min="0" step="1">
-<button onclick="getNumberOfBits()">Calculate</button>
-<p id="result"></p>
+<style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+<div style="display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center; max-width: 300px;">
+  <label for="numberInput">Dividend value (Rn):</label>
+  <input type="number" id="numberInput" step="1" style="width: 50%;" oninput="divCycles()">
+  <label for="numberInput2">Divisor value (Rm):</label>
+  <input type="number" id="numberInput2" step="1" style="width: 50%;" oninput="divCycles()">
+  <button style="grid-column: span 2; justify-self: left;" onclick="divCycles()">[ CALCULATE ]</button>
+  <label for="result">Predicted cycles:</label>
+  <input type="text" id="result" readonly  style="width: 50%;">
+</div>
 
 <script>
-    function getNumberOfBits() {
-        // Get the input value
-        const number = parseInt(document.getElementById("numberInput").value);
+    function divCycles() {
+        let number = Math.abs(parseInt(document.getElementById("numberInput").value));
+        let number2 = Math.abs(parseInt(document.getElementById("numberInput2").value));
 
-        // Check if the input is a valid number
-        if (isNaN(number) || number < 0) {
-            alert("Please enter a valid unsigned integer.");
+        if (isNaN(number) || number < 0 || number.toString(2).length > 32) {
+            document.getElementById("result").value = 'Invalid';
             return;
         }
 
-        // Calculate the number of bits used to represent the number
-        const bits = number.toString(2).length;
+        if (isNaN(number2) || number2 < 0 || number2.toString(2).length > 32) {
+            document.getElementById("result").value = 'Invalid';
+            return;
+        }
 
-        // Display the result
-        document.getElementById("result").innerText = `Number of bits used: ${bits}`;
+        const bits1 = number.toString(2).length
+        const bits2 = number2.toString(2).length;
+
+        document.getElementById("result").value = `${bits}`;
     }
 </script>
