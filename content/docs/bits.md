@@ -1,12 +1,10 @@
 ---
-title: Bits
+title: Division timing
 type: docs
 prev: barrel-shifter/
 # next: docs/folder/
 ---
-# Calculate Bits Used in Unsigned Integer
-
-Enter an unsigned integer to find out how many bits are used to represent it.
+# Division timing
 
 <style>
 /* Chrome, Safari, Edge, Opera */
@@ -21,12 +19,19 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 </style>
+
+
+
+### DCCC: Division Cycle Count Calculator
+
+
+
 <div style="display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center; max-width: 300px;">
   <label for="numberInput">Dividend value (Rn):</label>
-  <input type="number" id="numberInput" step="1" style="width: 50%;" oninput="divCycles()">
+  <input type="number" id="numberInput" step="1" value="0" style="width: 50%;" oninput="divCycles()">
   <label for="numberInput2">Divisor value (Rm):</label>
-  <input type="number" id="numberInput2" step="1" style="width: 50%;" oninput="divCycles()">
-  <button style="grid-column: span 2; justify-self: left;" onclick="divCycles()">[ CALCULATE ]</button>
+  <input type="number" id="numberInput2" step="1" value="0" style="width: 50%;" oninput="divCycles()">
+  <!-- <button style="grid-column: span 2; justify-self: left;" onclick="divCycles()">[ CALCULATE ]</button> -->
   <label for="result">Predicted cycles:</label>
   <input type="text" id="result" readonly  style="width: 50%;">
 </div>
@@ -46,9 +51,19 @@ input[type=number] {
             return;
         }
 
-        const bits1 = number.toString(2).length
+        const bits1 = number.toString(2).length;
         const bits2 = number2.toString(2).length;
+        var res = 0;
 
-        document.getElementById("result").value = `${bits}`;
+        if (number === 0 || number2 === 0) {
+            res = 2;
+        } else if (bits1 < bits2){
+            res = 3;
+        } else {
+            res = 5 + Math.floor((bits1 - bits2)/4)
+        }
+
+        
+        document.getElementById("result").value = res;
     }
 </script>
