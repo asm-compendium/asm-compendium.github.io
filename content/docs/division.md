@@ -123,7 +123,7 @@ $$ -->
 
 
 ### Division Cycle Count Calculator
-  
+<br>
 
 <div style="display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center; max-width: 300px;">
   <label for="numberInput">Dividend value (Rn):</label>
