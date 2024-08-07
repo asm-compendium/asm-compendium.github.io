@@ -123,8 +123,8 @@ $$ -->
 
 
 ### Division Cycle Count Calculator
+  
 
-Enter the values stored in registers used to calculate the cycles nessesary for the division. 
 <div style="display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center; max-width: 300px;">
   <label for="numberInput">Dividend value (Rn):</label>
   <input type="number" id="numberInput" step="1" value="" style="width: 50%;" oninput="divCycles()">
