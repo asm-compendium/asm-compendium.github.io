@@ -5,6 +5,18 @@ prev: barrel-shifter/
 # next: docs/folder/
 ---
 
+The division operations `sdiv` and `udiv` are the only arithmetic operations that are not constant time.
+Subsequently these instructions are not used in software when timing attacks are a concern.
+The technical reference manual[p. 30] states that division operations take 2-12 cycles, with a footnote stating "Division operations use early termination to minimize the number of cycles required based on the number of leading ones and zeroes in the input operands".
+The TRM explanation is true but does not result in exact cycle counts.
+To understand the behavior I benchmarked many divisions and build a formula from those results.
+The formula gives the cycles the sdiv and udiv instructions will take for any operant value.
+
+Definitions: bits() gives the amount of bits needed to represent a given value ignoring
+signage, 16 and -16 are treated the same. Rn represents the dividend and Rm the divisor,
+f (Rn, Rm) provides the amount of cycles needed to execute a udiv or sdiv instruction
+using those arguments.
+
 <style>
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -120,6 +132,9 @@ $$ -->
 </math>
 
 
+If one of the operands is zero, the operation takes 2 cycles. If the dividend uses less bits
+than the divisor, the operation takes 2 cycles. In all other cases the calculation time is
+determined by the difference in bits between the two operands.
 
 
 ### Division Cycle Count Calculator
