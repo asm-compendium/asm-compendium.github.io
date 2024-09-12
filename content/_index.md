@@ -1,9 +1,12 @@
 ---
-title: Cortex-M4 Optimization Compendium
+title: M4 Optimization Compendium
 toc: false
 ---
 
-Under construction.
+This compendium dives into the details of assembly-level optimizations and how they
+perform on the Cortex-M4. These optimization techniques are accompanied by example assembly functions
+and microbenchmarks of those examples. 
+
 
 ## Explore
 
