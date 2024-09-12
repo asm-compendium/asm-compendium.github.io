@@ -63,5 +63,3 @@ eliminate the cycles used by shift instructions. The performance impact can be s
 | **Fold count**           | (-) 0                | (-) 0                |
 | **Cycle count**          | 4                    | 2                    |
 
-*Table: Benchmark results of bit-shifting examples.*
-
