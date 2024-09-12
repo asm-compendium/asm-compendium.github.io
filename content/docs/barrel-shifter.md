@@ -22,8 +22,13 @@ prev: docs/
             }
         }
 </style>
+The inline barrel shifter feature, also known as the constant shift feature, allows to
+optionally shift the Rn operand for most instructions before it is processed by the
+main instruction. This is a hallmark feature of ARM processors and is widely used in
+optimization by programmers and compilers alike.
 
-The inline barrel shifter feature, also known as the constant shift feature, allows to optionally shift the Rn operand for most instructions before it is processed by the main instruction.
+When an instruction includes a shift to its Rn operand, this is evaluated first. `add r1, r2, r3 ror #0x10` should
+be interpreted as `r1 = r2 + ror(r3, 0x10)`.
 
 <div class="side-by-side">
   <div class="box">
@@ -46,4 +51,17 @@ The inline barrel shifter feature, also known as the constant shift feature, all
   </div>
 </div>
 
-As this does not add any cycles to aritmatic instructions, it can be used to eliminate the cycles used by most shift instructions.
+The example above depicts the same calculation performed with and without the use of the
+barrelshifter. Shifting an operand does not add any cycles, thus it can be used to
+eliminate the cycles used by shift instructions. The performance impact can be seen in the table below.
+
+| Figure                  | sample a  | sample b  |
+|-------------------------|----------------------|----------------------|
+| **Instructions executed**| 4                    | 2                    |
+| **LSU count**            | 0                    | 0                    |
+| **CPI count**            | 0                    | 0                    |
+| **Fold count**           | (-) 0                | (-) 0                |
+| **Cycle count**          | 4                    | 2                    |
+
+*Table: Benchmark results of bit-shifting examples.*
+
