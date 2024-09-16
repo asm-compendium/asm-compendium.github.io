@@ -27,8 +27,9 @@ optionally shift the Rn operand for most instructions before it is processed by 
 main instruction. This is a hallmark feature of ARM processors and is widely used in
 optimization by programmers and compilers alike.
 
-When an instruction includes a shift to its Rn operand, this is evaluated first. `add r1, r2, r3 ror #0x10` should
-be interpreted as `r1 = r2 + ror(r3, 0x10)`.
+When an instruction includes a shift to its Rn operand, this is evaluated first.
+
+For example `add r1, r2, r3 ror #0x10` should be interpreted as `r1 = r2 + ror(r3, 0x10)`.
 
 <div class="side-by-side">
   <div class="box">
