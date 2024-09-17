@@ -31,16 +31,16 @@ In a situation where many 32-bit numbers are added and accumulated as a 64-bit n
 
 ```verilog {filename="accumulate_array_a.s"}
 accumulate_array_a:
-    ldm sp, {r2-r5} \\ Load 4 values
-    mov r0, #0 \\Init low bits
-    mov r1, #0 \\Init high bits
+    ldm sp, {r2-r5} // Load 4 values
+    mov r0, #0 //Init low bits
+    mov r1, #0 //Init high bits
     
-    adds r0, r3 \\add r3 to r0
-    adc  r1, #0 \\add carry to r1
-    adds r0, r4 \\add r4 to r0
-    adc  r1, #0 \\add carry to r1
-    adds r0, r5 \\add r4 to r0
-    adc  r1, #0 \\add carry to r1
+    adds r0, r3 //add r3 to r0
+    adc  r1, #0 //add carry to r1
+    adds r0, r4 //add r4 to r0
+    adc  r1, #0 //add carry to r1
+    adds r0, r5 //add r4 to r0
+    adc  r1, #0 //add carry to r1
     bx lr
 ```
   </div>
@@ -48,13 +48,13 @@ accumulate_array_a:
 
 ```verilog {filename="accumulate_array_b.s"}
 accumulate_array_b:
-    ldm sp, {r0-r3} \\ Load 4 values
-    mov r4, #1 \\ Set multiplier to 1
+    ldm sp, {r0-r3} // Load 4 values
+    mov r4, #1 // Set multiplier to 1
     
     umaal.w r0, r1, r2, r4
-           \\ r0, r1 = r0 + r1 + r2*1
+           // r0, r1 = r0 + r1 + r2*1
     umlal.w r0, r1, r3, r4
-           \\ r0, r1 += r3*1
+           // r0, r1 += r3*1
     bx lr
 ```
   </div>
