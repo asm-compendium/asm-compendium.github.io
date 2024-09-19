@@ -1,4 +1,5 @@
 ---
+weight: 1
 draft: false
 title: Computational operations
 type: docs
@@ -13,5 +14,5 @@ set operations available”. Microcontrollers often contain specialized circuitr
 computationally hard tasks. It is recommended to go through the ways these
 can be used and check if any are usable by the algorithm. This is not always
 straightforward; sometimes part of a specialized operation can be used such
-as shown in `Unsigned `~~`Multiply`~~` Accumulate Long`, or a specialized instruction can be used in some
+as shown in `Unsigned Accumulate Long`, or a specialized instruction can be used in some
 other unintended way, as shown in `SEL based conditional move`.
