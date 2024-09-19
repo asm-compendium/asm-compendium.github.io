@@ -1,4 +1,5 @@
 ---
+weight: 1
 title: Loading larger values using ldr literal
 type: docs
 prev: docs/
