@@ -1,7 +1,7 @@
 ---
 title: Division timing
 type: docs
-prev: barrel-shifter/
+# prev: barrel-shifter/
 # next: docs/folder/
 ---
 

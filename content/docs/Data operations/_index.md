@@ -3,7 +3,7 @@ weight: 2
 draft: false
 title: Data operations
 type: docs
-# prev: docs/first-page
+prev: docs/
 # next: docs/folder/registers
 sidebar:
   open: true

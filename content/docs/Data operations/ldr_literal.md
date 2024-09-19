@@ -2,7 +2,7 @@
 weight: 1
 title: Loading larger values using ldr literal
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

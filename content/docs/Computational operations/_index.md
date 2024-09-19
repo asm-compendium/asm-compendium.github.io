@@ -3,7 +3,7 @@ weight: 1
 draft: false
 title: Computational operations
 type: docs
-# prev: docs/first-page
+prev: docs/
 # next: docs/folder/registers
 sidebar:
   open: true

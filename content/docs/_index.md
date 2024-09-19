@@ -1,6 +1,5 @@
 ---
 title: Documentation
-next: barrel-shifter
 ---
 <style>
   .side-by-side {

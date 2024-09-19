@@ -1,7 +1,8 @@
 ---
+weight: 6
 title: FPU registers
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

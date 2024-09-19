@@ -2,7 +2,7 @@
 draft: true
 title: FPU
 type: docs
-prev: docs/first-page
+# prev: docs/first-page
 next: docs/folder/registers
 sidebar:
   open: true

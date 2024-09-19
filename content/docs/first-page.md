@@ -2,7 +2,7 @@
 draft: true
 title: Demo Page
 type: docs
-prev: docs/
+# prev: docs/
 next: docs/folder/
 ---
 

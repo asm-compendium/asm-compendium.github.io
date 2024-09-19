@@ -1,7 +1,8 @@
 ---
+weight: 3
 title: Load placement
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

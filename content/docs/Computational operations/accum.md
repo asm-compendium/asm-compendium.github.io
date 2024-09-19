@@ -1,7 +1,7 @@
 ---
 title: Unsigned Multiply Accumulate Long
 type: docs
-#prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

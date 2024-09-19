@@ -1,7 +1,7 @@
 ---
 title: Constant time multiplication instructions
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

@@ -1,7 +1,8 @@
 ---
+weight: 2
 title: Store placement
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

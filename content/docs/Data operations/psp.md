@@ -1,11 +1,10 @@
 ---
-weight: 7
-title: Counters in the FPU
+weight: 10
+title: Accessing the process stack pointer directly
 type: docs
 # prev: docs/
 # next: docs/folder/
 ---
-
 <style>
   .side-by-side {
     display: flex;

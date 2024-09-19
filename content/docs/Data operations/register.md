@@ -1,7 +1,8 @@
 ---
+weight: 5
 title: Register balancing
 type: docs
-prev: docs/
+# prev: docs/
 # next: docs/folder/
 ---
 <style>

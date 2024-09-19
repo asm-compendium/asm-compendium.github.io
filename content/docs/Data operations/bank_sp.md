@@ -1,11 +1,10 @@
 ---
-weight: 7
-title: Counters in the FPU
+weight: 9
+title: Banking the stack pointer
 type: docs
 # prev: docs/
 # next: docs/folder/
 ---
-
 <style>
   .side-by-side {
     display: flex;
