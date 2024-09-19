@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: FPU
 type: docs
 prev: docs/first-page
