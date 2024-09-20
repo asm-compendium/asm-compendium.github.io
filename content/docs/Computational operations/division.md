@@ -1,4 +1,5 @@
 ---
+weight: 4
 title: Division timing
 type: docs
 # prev: barrel-shifter/

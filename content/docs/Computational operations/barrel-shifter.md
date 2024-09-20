@@ -1,4 +1,5 @@
 ---
+weight: 1
 title: Barrel Shifter
 type: docs
 # prev: docs/
