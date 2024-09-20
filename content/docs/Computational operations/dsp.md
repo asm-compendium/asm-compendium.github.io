@@ -6,5 +6,4 @@ type: docs
 # next: docs/folder/
 ---
 
-test [Division timing](docs/Computational operations/division.md)
-test [Reference]({{% ref "#Division timing" %}})
+[Link Text]({{< relref "division.md" >}})
