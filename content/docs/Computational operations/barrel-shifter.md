@@ -27,28 +27,6 @@ The inline barrel shifter feature, also known as the constant shift feature, all
 optionally shift the Rn operand for most instructions before it is processed by the
 main instruction. This is a hallmark feature of ARM processors and is widely used in
 optimization by programmers and compilers alike.
-```mermaid
-graph TD
-    A1["add r1, r2"] -->|Perform Operation| A2[ALU]
-    A2 -->|Output r1| A3["(add r1, r2, b)"]
-    A3 --> B1["(ror b, r3, #0x10)"]
-    subgraph Barrel_Shifter
-        B2["r3, ror #0x10"]
-    end
-    
-    B1 --> B2
-
-    %% Define arrows representing data flow
-    B2 -->|Data Flow| B3[Barrel_Shifter] 
-    
-    %% Arrows to depict the flow between ALU and shifter
-    A1 -->|Data Path| B2
-    B2 -->|Data Path| A2
-    
-    %% Dashed outline for barrel shifter block
-    style B2 stroke-dasharray: 5 5
-
-```
 
 When an instruction includes a shift to its Rn operand, this is evaluated first.
 
