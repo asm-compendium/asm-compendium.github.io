@@ -1,6 +1,6 @@
 ---
 weight: 3
-title: Unsigned Multiply Accumulate Long
+title: Unsigned Accumulate Long
 type: docs
 # prev: docs/
 # next: docs/folder/
