@@ -20,8 +20,8 @@ title: Documentation
         }
 </style>
 
-To illustrate the behavior of instructions, many side-by-side comparisons of assembly functions are used in this compendium. To facilitate reading we will go through some example figures. The assembly samples used in this explaination are shown below.
-These examples perform the same funuction using different instructions.
+To illustrate the behavior of instructions, many side-by-side comparisons of assembly functions are used in this compendium. To facilitate reading we will go through some example figures. The assembly samples used in this explanation are shown below.
+These examples perform the same function using different instructions.
 
 
 <div class="side-by-side">
