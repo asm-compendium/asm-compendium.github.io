@@ -10,7 +10,7 @@ type: docs
     display: flex;
     gap: 10px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .box {
     flex: 1;
