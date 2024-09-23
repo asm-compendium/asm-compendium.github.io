@@ -56,7 +56,7 @@ pythagorean:
 `pythagorean.s` shows an assembly implementation that would just take three cycles, ignoring the function call overhead. Implementing large multiplications in constant time without these instructions, such as would be necessary on an M3, is much slower. While there are some tricks one can use ([BearSSL constant-time multiplication](https://www.bearssl.org/ctmul.html)
 ), these come with compromises in precision or are not constant time in edge cases. A naive constant time implementation based on the 64-bit multiplication function from the ARM Cortex-M0 runtime ABI is used for comparison. It works by splitting `A` and `B` in 16-bit parts, multiplying and accumulating those results.
 
-| Version                 | C implementation | Naive assembly implementation |
+| Version                 | pythagorean.s | Naive assembly implementation |
 |-------------------------|-----------------------------------------------------|-------|
 | **Instructions executed**| 3                                                   | 56    |
 | **LSU count**            | 0                                                   | 0     |
