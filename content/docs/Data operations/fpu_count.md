@@ -10,8 +10,8 @@ type: docs
   .side-by-side {
     display: flex;
     gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .box {
     flex: 1;
@@ -29,7 +29,6 @@ type: docs
 When a counter is kept in the FPU, it can be modified and compared with FPU instructions. This comes with some overhead and limitations. It is only possible when the counter can be represented as a 32-bit float (25-bit signed int equivalent). Using a counter in the FPU is only faster when no CPU register values may be lost. While this is somewhat restrictive it has been used successfully in practice \cite{CHES:ACCEHHLNSWY21}. The code below shows an example of how this can be used, the performance comparison is shown in the following table.
 
 #### Decrementing on the FPU. Note that the `vsub` can not be placed directly before `vcmp` without delays.
-<div style="margin-top: -20px;"></div>
 <div class="side-by-side">
   <div class="box">
 
