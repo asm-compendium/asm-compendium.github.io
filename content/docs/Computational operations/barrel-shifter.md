@@ -30,33 +30,40 @@ optimization by programmers and compilers alike.
 
 When an instruction includes a shift to its Rn operand, this is evaluated first.
 
+![](/images/shift.png "Schematic view of an instruction using the barrel shifter.")
+
 For example `add r1, r2, r3 ror #0x10` should be interpreted as `r1 = r2 + ror(r3, 0x10)`.
 
+#### Comparison between using separate bit-shifting instructions and using the barrelshifter.
 <div class="side-by-side">
   <div class="box">
 
 ```verilog {filename="sample a"}
-   mov r0, #10
-   mov r1, #12
-   ror r1, #2
-   add r0, r1, r1 
+sample_a:
+    ror r3, #0x10
+    lsr r4, #8
+    add r1, r2, r3
+    orr r1, r4
+    bx lr
 ```
+Discrete rotate and shift instructions.
   </div>
   <div class="box">
 
 ```verilog {filename="sample b"}
-   mov r0, #10
-   mov r1, #12
-   add r0, r1, r1, ror #2
-
+sample_b:
+    add r1, r2, r3, ror #0x10
+    orr r1, r1, r4, lsr #8
+    bx lr
 ```
+Rotate and shift instructions using the barrel shifter.
   </div>
 </div>
 
 The example above depicts the same calculation performed with and without the use of the
 barrelshifter. Shifting an operand does not add any cycles, thus it can be used to
 eliminate the cycles used by shift instructions. The performance impact can be seen in the table below.
-
+#### Benchmark results of bit-shifting examples
 | Figure                  | sample a  | sample b  |
 |-------------------------|----------------------|----------------------|
 | **Instructions executed**| 4                    | 2                    |

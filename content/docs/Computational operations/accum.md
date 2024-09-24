@@ -24,9 +24,9 @@ type: docs
         }
 </style>
 
-In a situation where many 32-bit numbers are added and accumulated as a 64-bit number, multiply accumulate instructions are also useful. The traditional way to add a 32-bit value to a 64-bit value is to use `adds` to add the 32-bit value to the least significant bits of the 64-bit value and \asm{adc} to add the carry to the most significant bits (`accumulate_array_a.s`) as there is no specialized instruction to do this. We can turn `umlal` into such an operation by using a multiplication of 1; improving performance and size, at the cost of using an extra register (`accumulate_array_b.s`). The DSP extension also gives access to `umaal`, Unsigned Multiply Accumulate Accumulate Long, which is the ideal instruction to start this accumulation problem.
+In a situation where many 32-bit numbers are added and accumulated as a 64-bit number, multiply accumulate instructions are also useful. The traditional way to add a 32-bit value to a 64-bit value is to use `adds` to add the 32-bit value to the least significant bits of the 64-bit value and `adc` to add the carry to the most significant bits (`accumulate_array_a.s`) as there is no specialized instruction to do this. We can turn `umlal` into such an operation by using a multiplication of 1; improving performance and size, at the cost of using an extra register (`accumulate_array_b.s`). The DSP extension also gives access to `umaal`, Unsigned Multiply Accumulate Accumulate Long, which is the ideal instruction to start this accumulation problem.
 
-
+####  A comparison between accumulation in a traditional way and accumulation using the accumulation part of multiply accumulate instructions.
 <div class="side-by-side">
   <div class="box">
 
@@ -62,10 +62,9 @@ accumulate_array_b:
 </div>
 
 
-Accumulation using carry compared to accumulation using multiplication instructions.]{A comparison between accumulation in a traditional way and accumulation using the accumulation part of multiply accumulate instructions.
 
 The table below shows the benchmarks of these functions. The loading of values was included to make the example more readable, when ignoring the cycles used by `ldm` and thus only looking at setup and accumulation, sample a would take 8 cycles and sample b only 3 cycles.
-
+#### Performance comparison of accumulating using carry and accumulating using multiplication instructions.
 | Example: | sample a | sample b |
 |-------------------------|------------------------------------------|------------------------------------------|
 | **Instructions executed**| 9                                        | 4                                        |
@@ -74,5 +73,4 @@ The table below shows the benchmarks of these functions. The loading of values w
 | **Fold count**           | (-) 0                                    | (-) 0                                    |
 | **Cycle count**          | 14                                       | 9                                        |
 
-*Table: Performance comparison of accumulating using carry and accumulating using multiplication instructions.*
 
