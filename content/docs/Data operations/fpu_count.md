@@ -26,7 +26,7 @@ type: docs
 </style>
 
 
-When a counter is kept in the FPU, it can be modified and compared with FPU instructions. This comes with some overhead and limitations. It is only possible when the counter can be represented as a 32-bit float (25-bit signed int equivalent). Using a counter in the FPU is only faster when no CPU register values may be lost. While this is somewhat restrictive it has been used successfully in practice \cite{CHES:ACCEHHLNSWY21}. The code below shows an example of how this can be used, the performance comparison is shown in the following table.
+When a counter is kept in the FPU, it can be modified and compared with FPU instructions. This comes with some overhead and limitations. It is only possible when the counter can be represented as a 32-bit float (25-bit signed int equivalent). Using a counter in the FPU is only faster when no CPU register values may be lost. While this is somewhat restrictive it has been used successfully [in practice](https://github.com/vincentvbh/NTRUPrime-PolyMul/blob/master/src/polyinv/jump8divsteps_mod3.S). The code below shows an example of how this can be used, the performance comparison is shown in the following table.
 
 #### Decrementing on the FPU. Note that the `vsub` can not be placed directly before `vcmp` without delays.
 <div class="side-by-side">
@@ -34,25 +34,6 @@ When a counter is kept in the FPU, it can be modified and compared with FPU inst
 
 ```verilog {filename="sample_a.s"}
 sample_a:   
-  mov  r0, #10 // Loop count
-  vmov s0, r0
-  vcvt.f32.s32 s0, s0
-  vmov.f32 s1, #1.0
-  loop:
-    vsub.f32 s0, s0, s1 
-    add r2, #1
-    // loop control
-    vcmp.f32 s0, s1
-    vmrs APSR_nzcv, FPSCR
-    bge loop
-  bx lr
-```
-Decrementing on the CPU. r0 needs to be spilled and recovered as we are out of registers.
-  </div>
-  <div class="box">
-
-```verilog {filename="sample_b.s"}
-sample_b:   
   mov r0, #10 // Loop count
   vmov s0, r0
   loop:
@@ -65,7 +46,25 @@ sample_b:
     vmov r0, s1     
     bne loop
   bx lr
+```
+Decrementing on the CPU. r0 needs to be spilled and recovered as we are out of registers.
+  </div>
+  <div class="box">
 
+```verilog {filename="sample_b.s"}
+sample_b:   
+  mov  r0, #10 // Loop count
+  vmov s0, r0
+  vcvt.f32.s32 s0, s0
+  vmov.f32 s1, #1.0
+  loop:
+    vsub.f32 s0, s0, s1 
+    add r2, #1
+    // loop control
+    vcmp.f32 s0, s1
+    vmrs APSR_nzcv, FPSCR
+    bge loop
+  bx lr
 ```
 Example of looping ten times using a decrementing counter in the FPU and CPU. 
   </div>
