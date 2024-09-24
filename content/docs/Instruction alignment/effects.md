@@ -28,8 +28,8 @@ type: docs
  Most 16-bit instructions can be replaced by a 32-bit instruction by adding .w at the end of the mnemonic, shifting subsequent code by 16 bits and providing the ability to influence alignment.
  | Address    | Sample a |          | Sample b |          |
 |------------|--------------------------|----------|--------------------------|----------|
-| 0x80001b0  | c046                     | <span style="color:blue; font-weight:bold;">4fea</span> | 4fea                     | 0808     |
-| 0x80001b4  | <span style="color:blue; font-weight:bold;">0808</span> | 4fea | <span style="color:blue; font-weight:bold;">4fea</span> | <span style="color:blue; font-weight:bold;">0808</span> |
-| 0x80001b8  | 0808                     | <span style="color:blue; font-weight:bold;">4fea</span> | 4fea                     | 0808     |
-| 0x80001bc  | <span style="color:blue; font-weight:bold;">0808</span> |          | <span style="color:blue; font-weight:bold;">4fea</span> | <span style="color:blue; font-weight:bold;">0808</span> |
+| 0x80001b0  | c046                     | <span style=" font-weight:bold;">4fea</span> | 4fea                     | 0808     |
+| 0x80001b4  | <span style=" font-weight:bold;">0808</span> | 4fea | <span style=" font-weight:bold;">4fea</span> | <span style=" font-weight:bold;">0808</span> |
+| 0x80001b8  | 0808                     | <span style=" font-weight:bold;">4fea</span> | 4fea                     | 0808     |
+| 0x80001bc  | <span style=" font-weight:bold;">0808</span> |          | <span style=" font-weight:bold;">4fea</span> | <span style=" font-weight:bold;">0808</span> |
 
