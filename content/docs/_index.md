@@ -21,9 +21,7 @@ title: Documentation
 </style>
 
 To illustrate the behavior of instructions, many side-by-side comparisons of assembly functions are used in this compendium. To facilitate reading we will go through some example figures. The assembly samples used in this explanation are shown below.
-These examples perform the same function using different instructions.
-
-
+#### A comparison of performing the same operations using different instructions.
 <div class="side-by-side">
   <div class="box">
 
@@ -34,6 +32,7 @@ sample_a:
     str r5, [r0]
     bx lr
 ```
+Accessing a pointer with a word offset, using subtraction.
   </div>
   <div class="box">
 
@@ -44,6 +43,7 @@ sample_b:
     bx lr
 
 ```
+Accessing a pointer with a word offset using pre-indexing.
   </div>
 </div>
 

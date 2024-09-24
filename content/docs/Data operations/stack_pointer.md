@@ -25,7 +25,7 @@ type: docs
 </style>
 
 While gaining an additional register might sound promising, this has a few
-pitfalls. Bits \[0,1\] are "Read As Zero/Write Ignored" thus, add sp, #5 will add
+pitfalls. Bits \[0,1\] are "Read As Zero/Write Ignored" thus, `add sp, #5` will add
 4 to the stack pointer instead of 5. It is also essential to have some way to
 recover the stack pointer, this could be a hard-coded address or a FPU register.
 Finally, there is the issue that any interrupts that rely on a valid stack pointer
