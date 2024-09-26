@@ -66,7 +66,7 @@ Using the stack pointer to interchange values.
 While banking the stack pointer is faster than using the stack, it is not faster than using FPU registers. Using register banking is thus only viable when all registers have been exhausted. 
 
 #### Benchmarks comparing tactics to swap the value in a register with a saved value.
-| Example                   | [Figure 1](#fig-bank-a) | [Figure 2](#fig-bank-b) |
+| Example                   | sample a | sample b |
 |--------------------------|------------------------|-------------------------|
 | **Instructions executed** | 5                      | 5                       |
 | **LSU count**             | 6                      | 0                       |
