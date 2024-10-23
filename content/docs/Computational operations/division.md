@@ -134,7 +134,7 @@ $$ -->
 
 
 If one of the operands is zero, the operation takes 2 cycles. If the dividend uses less bits
-than the divisor, the operation takes 2 cycles. In all other cases the calculation time is
+than the divisor, the operation takes 3 cycles. In all other cases the calculation time is
 determined by the difference in bits between the two operands.
 
 
